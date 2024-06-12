@@ -138,4 +138,8 @@ final class User extends Entity{
     public function __toString() {
         return $this->pseudo;
     }
+
+    public function hasRole($role) {
+        return $this->role === $role;
+    }
 }
